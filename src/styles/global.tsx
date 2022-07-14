@@ -35,6 +35,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${COLOR.BLACK};
   }
   body {
+    font-size: ${FONT.SIZE.DEFAULT};
     line-height: 1.285;
   }
   ol, ul {
@@ -66,6 +67,10 @@ const GlobalStyle = createGlobalStyle`
     box-shadow: none;
     appearance: none;
   }
+  input::placeholder,
+  textarea::placeholder {
+    color: ${COLOR.GRAY[500]};
+  }
   a {
     text-decoration: none;
     font: inherit;
@@ -77,10 +82,23 @@ const GlobalStyle = createGlobalStyle`
       cursor: default;
     }
   }
-  img {
+  img,
+  svg {
     display: block;
     max-width: 100%;
     border: 0;
+  }
+  
+  .hidden {
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    z-index: -1;
+    border: 0;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
   }
 `;
 
