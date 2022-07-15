@@ -5,7 +5,7 @@ import { mixins } from '../../styles/mixins';
 const FilterList = styled.div`
   ${mixins.flex({ align: 'center' })}
   gap: 5px;
-  height: ${HeaderHeight.OptionBar};
+  height: ${HeaderHeight.OptionBar}px;
   padding: 0 7px;
   overflow-x: scroll;
 `;
