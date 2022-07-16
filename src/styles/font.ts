@@ -4,6 +4,7 @@ export const FONT: font = {
     SAMLL: '1.2rem',
     DEFAULT: '1.4rem',
     MEDIUM: '1.6rem',
+    LARGE: '2.0rem',
   },
   WEIGHT: {
     REGULAR: 400,
@@ -19,6 +20,7 @@ type font = {
     SAMLL: string;
     DEFAULT: string;
     MEDIUM: string;
+    LARGE: string;
   };
   WEIGHT: {
     REGULAR: 400;
