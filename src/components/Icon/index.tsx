@@ -2,12 +2,14 @@ import { ReactComponent as Logo } from '../../assets/Icon/Logo.svg';
 import { ReactComponent as Search } from '../../assets/Icon/Search.svg';
 import { ReactComponent as Close } from '../../assets/Icon/Close.svg';
 import { ReactComponent as Reset } from '../../assets/Icon/Reset.svg';
+import { ReactComponent as Loading } from '../../assets/Icon/Loading.svg';
 
 const iconComponents: iconComponentsType = {
   Logo,
   Search,
   Close,
   Reset,
+  Loading,
 };
 
 export default function Icon({ icon, width, height, fill, stroke }: iconProps) {
