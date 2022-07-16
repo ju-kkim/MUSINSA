@@ -1,9 +1,14 @@
+import { GoodsProvider } from './components/store/goods';
 import Header from './layout/Header';
+import MainContents from './layout/MainContents';
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <GoodsProvider>
+        <Header />
+        <MainContents />
+      </GoodsProvider>
     </div>
   );
 }
